@@ -1,18 +1,18 @@
-import java.util.Scanner;
- class p {
-
- public static void main(String[] args) {
-  Scanner cs=new Scanner(System.in);
-  int row_size,out,in;
-   row_size=cs.nextInt();
-   for(out=row_size;out>=1;out--)
+import java.util.*;
+class Main
+{
+    public static void main(String [] args)
     {
-     for(in=row_size;in>=1;in--)
-      System.out.print(in+" ");
-
-          System.out.println();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for (int i = 1; i <= n; i++) 
+        {
+            for (int j = 1; j <= i; j++) 
+            {
+                System.out.print(j);
+            }
+            System.out.print("
+");
+        }             
     }
-  cs.close();
- }
 }
-
