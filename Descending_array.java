@@ -1,25 +1,25 @@
 import java.util.Scanner;
-class des
+class ascend
 {
-    public static void main(String args[])
+    public static void main(String aegs[])
     {
+        int n,x[],i,flag=0;
         Scanner sc=new Scanner(System.in);
-        int n,i,f=0;
         n=sc.nextInt();
-        int x[]=new int[n];
+        x=new int[n];
         for(i=0;i<n;i++)
         {
             x[i]=sc.nextInt();
         }
-        for(i=0;i<n-1;i++)
+         for(i=0;i<n-1;i++)
         {
             if(x[i]<=x[i+1])
             {
-                f=1;
+                flag=1;
                 break;
             }
         }
-        if(f==0)
+        if(flag==0)
         {
             System.out.println("yes");
         }
